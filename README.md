@@ -11,8 +11,8 @@ Use lazy.nvim:
 return {
     "yuri-rage/nvim-ragequit-colors",
     config = function()
-      require("ragequit").setup({})
+        require("ragequit").setup({})
     end,
-  }
+}
 
 ```
