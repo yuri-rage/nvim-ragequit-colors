@@ -597,28 +597,36 @@ M.load_plugin_syntax = function(palette)
 
 		-- Diagnostic
 		DiagnosticSignError = {
-			fg = palette.red,
+			fg = palette.pink,
 		},
 		DiagnosticSignWarn = {
-			fg = palette.orange,
+			fg = palette.magenta,
 		},
 		DiagnosticSignInfo = {
-			fg = palette.purple,
+			fg = palette.grey,
 		},
 		DiagnosticSignHint = {
-			fg = palette.aqua,
-		},
-		DiagnosticVirtualTextError = {
-			fg = palette.red,
-		},
-		DiagnosticVirtualTextWarn = {
-			fg = palette.orange,
-		},
-		DiagnosticVirtualTextInfo = {
 			fg = palette.purple,
 		},
+		DiagnosticVirtualTextError = {
+			fg = palette.pink,
+			bg = palette.base3,
+			style = "italic",
+		},
+		DiagnosticVirtualTextWarn = {
+			fg = palette.magenta,
+			bg = palette.base3,
+			style = "italic",
+		},
+		DiagnosticVirtualTextInfo = {
+			fg = palette.grey,
+			bg = palette.base3,
+			style = "italic",
+		},
 		DiagnosticVirtualTextHint = {
-			fg = palette.aqua,
+			fg = palette.purple,
+			bg = palette.base3,
+			style = "italic",
 		},
 		DiagnosticUnderlineError = {
 			style = "undercurl",
@@ -626,15 +634,15 @@ M.load_plugin_syntax = function(palette)
 		},
 		DiagnosticUnderlineWarn = {
 			style = "undercurl",
-			sp = palette.orange,
+			sp = palette.magenta,
 		},
 		DiagnosticUnderlineInfo = {
 			style = "undercurl",
-			sp = palette.purple,
+			sp = palette.grey,
 		},
 		DiagnosticUnderlineHint = {
 			style = "undercurl",
-			sp = palette.aqua,
+			sp = palette.purple,
 		},
 
 		-- Telescope
